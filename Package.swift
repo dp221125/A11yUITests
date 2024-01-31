@@ -18,7 +18,10 @@ let package = Package(
         .target(
             name: "A11yUITests",
             dependencies: [],
-            path: "Sources/A11yUITests"
+            path: "Sources/A11yUITests",
+            linkerSettings: [
+                .linkedFramework("XCTest")
+            ]
         ),
     ],
     swiftLanguageVersions: [.v5]
